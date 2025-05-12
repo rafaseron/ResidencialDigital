@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadstro de Moradores do Condominio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="16dp"
+        android:paddingTop="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:text="Seu nome"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/txtHeader"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeader"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        android:hint="Digite seu nome"/>
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:text="Sua idade"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/txtHeader"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"/>
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:textSize="14sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge"
+        android:hint="Qual a sua idade"/>
+
+    <TextView
+        android:id="@+id/txtApto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:text="Qual o numero do apartamento que você mora?"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/txtHeader"
+        app:layout_constraintTop_toBottomOf="@+id/edtAge"/>
+
+    <EditText
+        android:id="@+id/edtApto"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:textSize="14sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApto"
+        android:hint="Digite seu apartamento"/>
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:text="Seu telefone para contato"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/txtHeader"
+        app:layout_constraintTop_toBottomOf="@+id/edtApto"/>
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:textSize="14sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhone"
+        android:hint="Digite seu telefone celular"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textColor="@color/md_theme_onPrimary"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
