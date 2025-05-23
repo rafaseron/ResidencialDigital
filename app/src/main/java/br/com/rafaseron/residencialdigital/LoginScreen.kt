@@ -9,7 +9,7 @@ import androidx.compose.ui.tooling.preview.Preview
 @Composable
 fun LoginScreen(modifier: Modifier) {
     Column {
-        Text(text = "Home")
+        Text(text = "Login")
     }
 }
 
