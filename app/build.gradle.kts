@@ -49,13 +49,16 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.ktor.client.core)
-    implementation(libs.koin.android)
-    implementation(libs.coil.compose)
-    implementation(libs.coil.okhttp)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Ktor Client
+    implementation(libs.ktor.client.core)
+
+    // Coil
+    implementation(libs.coil.compose)
+    implementation(libs.coil.okhttp)
 
     // Compose
     implementation(platform(libs.compose.bom))
@@ -64,4 +67,18 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     debugImplementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.activity.compose)
+
+    // Compose Navigation
+    implementation(libs.navigation.compose)
+
+    // Koin
+    implementation(libs.koin.android)
+    implementation(project.dependencies.platform(libs.koin.bom))
+    implementation(libs.koin.core)
+
+
+    // ViewModel
+    implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.lifecycle.viewmodel.compose)
+
 }
