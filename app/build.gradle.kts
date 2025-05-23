@@ -76,9 +76,12 @@ dependencies {
     implementation(project.dependencies.platform(libs.koin.bom))
     implementation(libs.koin.core)
 
-
     // ViewModel
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.lifecycle.viewmodel.compose)
+
+    // DataStore
+    implementation(libs.datastore.core)
+    implementation(libs.datastore.preferences)
 
 }
