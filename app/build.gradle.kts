@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -55,6 +56,11 @@ dependencies {
 
     // Ktor Client
     implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.client.content.negociation)
+    implementation(libs.ktor.client.loggin)
+    implementation(libs.ktor.serialization)
+    implementation(libs.kotlin.serialization.json)
 
     // Coil
     implementation(libs.coil.compose)
